@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="0.511">
+<testcase classname="Wowzi's Login Functionality" name="Validate that User can launch Wowzi login page with a valid url" time="0.062">
+<system-out><![CDATA[Given I enter a valid url...................................................passed
+Then User is redirected to the Wowzi login page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Wowzi's Login Functionality" name="Validate that User cannot log in with an invalid email address" time="0.003">
+<system-out><![CDATA[Given I am on the Wowzi login page..........................................passed
+When I enter an invalid email address.......................................passed
+And I enter a valid password................................................passed
+Then User is rejected from accessing the login page.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Wowzi's Login Functionality" name="Validate that User cannot log in with an invalid password" time="0.004">
+<system-out><![CDATA[Given User is on the Wowzi login page.......................................passed
+When User enter a valid email address.......................................passed
+And User enter an invalid password..........................................passed
+Then I am rejected from accessing the login page............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Wowzi's Login Functionality" name="Validate that User can click on the login button" time="0.004">
+<system-out><![CDATA[Given Amen is on the Wowzi login page.......................................passed
+When Amen enters a valid email address......................................passed
+And Amen enters a valid password............................................passed
+And Amen clicks on the login button.........................................passed
+Then Amen is redirected to the next page....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Wowzi's Login Functionality" name="Validate that User can access the User profile page" time="0.008">
+<system-out><![CDATA[Given Customer is on the Wowzi login page...................................passed
+When Customer enters a valid email address..................................passed
+And Customer enters a valid password........................................passed
+And Customer clicks on the login button.....................................passed
+Then Customer is redirected to User profile page............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Wowzi's Login Functionality" name="Validate that User can close banner on the User profile page" time="0.005">
+<system-out><![CDATA[Given Cheryl is on the Wowzi login page.....................................passed
+When Cheryl enters a valid email address....................................passed
+And Cheryl enters a valid password..........................................passed
+And Cheryl clicks on the login button.......................................passed
+Then Cheryl should be able to close the banner on the User profile page.....passed
+]]></system-out>
+</testcase>
+<testcase classname="Wowzi's Login Functionality" name="Validate that User can logout of the Wowzi Application successfully" time="0.014">
+<system-out><![CDATA[Given Amy is on the Wowzi login page........................................passed
+When Amy enters a valid email address.......................................passed
+And Amy enters a valid password.............................................passed
+And Amy clicks on the login button..........................................passed
+Then Amy should be able to close the banner on the User profile page........passed
+When Amy clicks on the settings icon........................................passed
+And Amy clicks on the logout button.........................................passed
+Then Amy should be logged out of the Wowzi Application successfully.........passed
+]]></system-out>
+</testcase>
+</testsuite>
